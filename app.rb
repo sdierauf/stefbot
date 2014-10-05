@@ -1,12 +1,12 @@
 require 'rubygems'
 require 'sinatra/base'
 require 'json'
-require 'dotenv'
+#require 'dotenv'
 
-Dotenv.load
+#Dotenv.load
 
 module Slacker
-  SLACKER_NAME_OVERRIDE = ENV['SLACKER_NAME_OVERRIDE'] || 'slacker'
+  SLACKER_NAME_OVERRIDE = ENV['SLACKER_NAME_OVERRIDE'] || 'stefbot'
 
   class Application < Sinatra::Application
     post '/' do
